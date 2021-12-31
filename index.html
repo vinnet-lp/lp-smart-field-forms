@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Localpayment Smart Fields Widgets</title>
+        <meta charset="utf-8" />
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+
+        <!-- font family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Quicksand"
+            rel="stylesheet"
+        />
+
+        <!-- Add Favicon Icon -->
+        <link
+            rel="icon"
+            href="https://localpayment.com/wp-content/uploads/2019/03/cropped-favicom_lp-1-32x32.png"
+            sizes="32x32"
+        />
+        <link
+            rel="icon"
+            href="https://localpayment.com/wp-content/uploads/2019/03/cropped-favicom_lp-1-192x192.png"
+            sizes="192x192"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="https://localpayment.com/wp-content/uploads/2019/03/cropped-favicom_lp-1-180x180.png"
+        />
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="./css/floating-labels.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+    </head>
+    <body>
+        <div class="main">
+            <div class="container main-header widget fd-column">
+                <div class="logo">
+                    <img
+                        src="https://localpayment.com/wp-content/uploads/2021/09/logo-localpaymen-blanco.png"
+                        alt="localpayment logo"
+                    />
+                </div>
+                <h1 class="mb-1">Smart Fields examples</h1>
+                <p>
+                    Smart Fields are pre-built rich UI components that help you
+                    build your own pixel-perfect checkout flows across desktop
+                    and mobile, without worrying about PCI.
+                </p>
+            </div>
+            <div class="container widget">
+                <div class="lp-smart-field-1">
+                    <form for="lp-smart-field-1" action="#">
+                        <div class="mb-2 d-flex fd-column">
+                            <label for="example5-name">Name</label>
+                            <input
+                                id="example-1-name"
+                                class="input"
+                                type="text"
+                                placeholder="Tom Porter"
+                                required
+                                autocomplete="name"
+                            />
+                        </div>
+                        <div class="mb-2 d-flex fd-column">
+                            <label for="example5-name">Card Number</label>
+                            <input
+                                id="example-1-name"
+                                class="input"
+                                type="text"
+                                placeholder="1111 1111 1111 1111"
+                                required
+                                autocomplete="name"
+                            />
+                        </div>
+                        <div class="field-group d-flex justify-content-between">
+                            <div class="d-flex mb-2 fd-column w-50">
+                                <label for="example5-name">Expiry Date</label>
+                                <input
+                                    id="example-1-name"
+                                    class="input"
+                                    type="text"
+                                    placeholder="MM/YY"
+                                    required
+                                    autocomplete="name"
+                                />
+                            </div>
+                            <div class="d-flex mb-2 fd-column w-50">
+                                <label for="example5-name">CVV</label>
+                                <input
+                                    id="example-1-name"
+                                    class="input"
+                                    type="text"
+                                    placeholder="123"
+                                    required
+                                    autocomplete="name"
+                                />
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button type="submit" class="ew-100 mt-2 btn">
+                                Pay
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container widget mb-2">
+                <div class="lp-smart-field-2">
+                    <div class="head-content mb-1">
+                        <div
+                            class="
+                                lp-smart-field-2-header-wrapper
+                                d-flex
+                                align-items-center
+                                flex-wrap
+                            "
+                        >
+                            <label
+                                class="checkbox-wrapper lp-smart-field-2-header"
+                                >New Payment Card
+                                <input
+                                    type="radio"
+                                    disabled
+                                    class="checkbox-input"
+                                    checked="checked"
+                                />
+                            </label>
+                            <div class="lp-smart-field-2-header">
+                                <img
+                                    id="visa"
+                                    alt="visa"
+                                    class="brand-img visa first"
+                                    src="img/visa.svg"
+                                />
+                                <img
+                                    id="mastercard"
+                                    alt="mastercard"
+                                    class="brand-img mastercard"
+                                    src="img/master.svg"
+                                />
+                                <img
+                                    id="amex"
+                                    alt="amex"
+                                    class="brand-img amex"
+                                    src="img/amex.svg"
+                                />
+                                <img
+                                    id="discover"
+                                    alt="discover"
+                                    class="brand-img discover"
+                                    src="img/discover.svg"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <form for="lp-smart-field-2" action="#">
+                            <div class="mb-1 d-flex fd-column">
+                                <div class="floating">
+                                    <input
+                                        id="lpSmartField2Name"
+                                        class="floating__input"
+                                        name="name"
+                                        placeholder="Tom Porter"
+                                    />
+                                    <label
+                                        for="lpSmartField2Name"
+                                        class="floating__label"
+                                        data-content="Name"
+                                    >
+                                        <span class="hidden--visually"
+                                            >Name</span
+                                        >
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mb-1 d-flex fd-column">
+                                <div class="floating">
+                                    <input
+                                        id="lpSmartField2Card"
+                                        class="floating__input"
+                                        name="cardNumber"
+                                        placeholder="1111 1111 1111 111"
+                                    />
+                                    <label
+                                        for="lpSmartField2Card"
+                                        class="floating__label"
+                                        data-content="Card Number"
+                                    >
+                                        <span class="hidden--visually"
+                                            >Card</span
+                                        >
+                                    </label>
+                                </div>
+                            </div>
+                            <div
+                                class="
+                                    field-group
+                                    d-flex
+                                    justify-content-between
+                                "
+                            >
+                                <div class="d-flex mb-1 fd-column w-50">
+                                    <div class="floating">
+                                        <input
+                                            id="lpSmartField2ExpiryDate"
+                                            class="floating__input"
+                                            name="expiryDate"
+                                            placeholder="MM/YY"
+                                        />
+                                        <label
+                                            for="lpSmartField2ExpiryDate"
+                                            class="floating__label"
+                                            data-content="Expiry Date"
+                                        >
+                                            <span class="hidden--visually"
+                                                >Expiry Date</span
+                                            >
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-1 fd-column w-50">
+                                    <div class="floating">
+                                        <input
+                                            id="lpSmartField2CVV"
+                                            class="floating__input"
+                                            name="cvv"
+                                            placeholder="123"
+                                        />
+                                        <label
+                                            for="lpSmartField2CVV"
+                                            class="floating__label"
+                                            data-content="CVV"
+                                        >
+                                            <span class="hidden--visually"
+                                                >CVV</span
+                                            >
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-1">
+                                <label class="checkbox-wrapper"
+                                    >Remember this card
+                                    <input
+                                        type="checkbox"
+                                        class="checkbox-input"
+                                        checked="checked"
+                                    />
+                                </label>
+                            </div>
+                            <div
+                                class="
+                                    lp-smart-field-2-footer-wrapper
+                                    d-flex
+                                    justify-content-between
+                                "
+                            >
+                                <button
+                                    type="submit"
+                                    class="lp-smart-field-2-footer btn"
+                                >
+                                    Continue to Pay
+                                </button>
+                                <p class="lp-smart-field-2-footer">
+                                    By clicking on continue to pay, you agree to
+                                    these
+                                    <a href="">Terms &amp; Conditions</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container widgets bg-pink">
+                <div class="lp-smart-field-3 mt-2">
+                    <form for="lp-smart-field-3" action="#">
+                        <div class="personal-information form-group">
+                            <div class="floating">
+                                <input
+                                    id="lp-field-3-name"
+                                    class="floating__input"
+                                    name="name"
+                                    placeholder="Johan Peter"
+                                />
+                                <label
+                                    for="lp-field-3-name"
+                                    class="floating__label"
+                                    data-content="Name"
+                                >
+                                    <span class="hidden--visually">Name</span>
+                                </label>
+                            </div>
+                            <div class="floating">
+                                <input
+                                    id="lp-field-3-name"
+                                    class="floating__input"
+                                    name="name"
+                                    placeholder="johan.peter@gmail.com"
+                                />
+                                <label
+                                    for="lp-field-3-name"
+                                    class="floating__label"
+                                    data-content="Email"
+                                >
+                                    <span class="hidden--visually">Email</span>
+                                </label>
+                            </div>
+
+                            <div class="floating">
+                                <input
+                                    id="lp-field-3-name"
+                                    class="floating__input border-0"
+                                    name="name"
+                                    placeholder="(111) 090-0123"
+                                />
+                                <label
+                                    for="lp-field-3-name"
+                                    class="floating__label"
+                                    data-content="Phone"
+                                >
+                                    <span class="hidden--visually">Phone</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="address-information form-group">
+                            <div class="floating">
+                                <input
+                                    id="lp-field-3-name"
+                                    class="floating__input"
+                                    name="name"
+                                    placeholder="Street: 25 De Mayo 3220."
+                                />
+                                <label
+                                    for="lp-field-3-name"
+                                    class="floating__label"
+                                    data-content="Address"
+                                >
+                                    <span class="hidden--visually"
+                                        >Address</span
+                                    >
+                                </label>
+                            </div>
+                            <div class="d-flex">
+                                <div class="floating w-50">
+                                    <input
+                                        id="lp-field-3-name"
+                                        class="floating__input"
+                                        name="name"
+                                        placeholder="Santa Fe"
+                                    />
+                                    <label
+                                        for="lp-field-3-name"
+                                        class="floating__label"
+                                        data-content="City"
+                                    >
+                                        <span class="hidden--visually"
+                                            >City</span
+                                        >
+                                    </label>
+                                </div>
+
+                                <div class="floating w-50">
+                                    <input
+                                        id="lp-field-3-name"
+                                        class="floating__input"
+                                        name="name"
+                                        placeholder="Santa Fe"
+                                    />
+                                    <label
+                                        for="lp-field-3-name"
+                                        class="floating__label"
+                                        data-content="State"
+                                    >
+                                        <span class="hidden--visually"
+                                            >State</span
+                                        >
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="floating w-50">
+                                    <input
+                                        id="lp-field-3-name"
+                                        class="floating__input border-0"
+                                        name="name"
+                                        placeholder="Argentina"
+                                    />
+                                    <label
+                                        for="lp-field-3-name"
+                                        class="floating__label"
+                                        data-content="Country"
+                                    >
+                                        <span class="hidden--visually"
+                                            >Country</span
+                                        >
+                                    </label>
+                                </div>
+
+                                <div class="floating w-50">
+                                    <input
+                                        id="lp-field-3-name"
+                                        class="floating__input border-0"
+                                        name="name"
+                                        placeholder="224499"
+                                    />
+                                    <label
+                                        for="lp-field-3-name"
+                                        class="floating__label"
+                                        data-content="Zip"
+                                    >
+                                        <span class="hidden--visually"
+                                            >Zip</span
+                                        >
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="address-information form-group">
+                            <div class="floating">
+                                <input
+                                    id="lp-field-3-name"
+                                    class="floating__input"
+                                    name="name"
+                                    placeholder="1111 1111 1111 111"
+                                />
+                                <label
+                                    for="lp-field-3-name"
+                                    class="floating__label"
+                                    data-content="Card Number"
+                                >
+                                    <span class="hidden--visually"
+                                        >Card Number</span
+                                    >
+                                </label>
+                            </div>
+                            <div class="d-flex">
+                                <div class="floating w-50">
+                                    <input
+                                        id="lp-field-3-name"
+                                        class="floating__input border-0"
+                                        name="name"
+                                        placeholder="MM/YY"
+                                    />
+                                    <label
+                                        for="lp-field-3-name"
+                                        class="floating__label"
+                                        data-content="Expiry Date"
+                                    >
+                                        <span class="hidden--visually"
+                                            >Expiry Date</span
+                                        >
+                                    </label>
+                                </div>
+
+                                <div class="floating w-50">
+                                    <input
+                                        id="lp-field-3-name"
+                                        class="floating__input border-0"
+                                        name="name"
+                                        placeholder="123"
+                                    />
+                                    <label
+                                        for="lp-field-3-name"
+                                        class="floating__label"
+                                        data-content="CVV"
+                                    >
+                                        <span class="hidden--visually"
+                                            >CVV</span
+                                        >
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit" class="ew-100 mt-2 btn">
+                                Pay
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container widget">
+                <div class="lp-smart-field-4">
+                    <form action="">
+                        <div class="lp-smart-field-4-input-group">
+                            <p class="subtitle">Enter your card details</p>
+                            <div class="input-card">
+                                <input
+                                    id="example-1-name"
+                                    class="input"
+                                    type="text"
+                                    placeholder="Card Number"
+                                    required
+                                    autocomplete="name"
+                                />
+                            </div>
+                            <div class="input-exp">
+                                <input
+                                    id="example-1-name"
+                                    class="input"
+                                    type="text"
+                                    placeholder="MM/YY"
+                                    required
+                                    autocomplete="name"
+                                />
+                            </div>
+                            <div class="input-cvv">
+                                <input
+                                    id="example-1-name"
+                                    class="input"
+                                    type="text"
+                                    placeholder="CVV"
+                                    required
+                                    autocomplete="name"
+                                />
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button type="submit" class="ew-100 mt-2 btn">
+                                Pay
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

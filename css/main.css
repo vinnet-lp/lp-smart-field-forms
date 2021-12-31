@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+}
+
+:root {
+    overflow-x: hidden;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+body {
+    overflow-x: hidden;
+    background-color: #f6f9fc;
+}
+
+.width-auto {
+    width: auto;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.border-0 {
+    border: 0 !important;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+/* basic width classes */
+.w-25 {
+    width: calc(25% - 5px);
+}
+
+.w-50 {
+    width: calc(50% - 5px);
+}
+
+.w-100 {
+    width: calc(100% - 10px);
+}
+
+/* e stands for exact */
+.ew-25 {
+    width: 25%;
+}
+
+.ew-50 {
+    width: 50%;
+}
+
+.ew-100 {
+    width: 100%;
+}
+
+/* flex box basic classes */
+.d-flex {
+    display: flex;
+}
+
+.fd-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* basic margin and padding classes */
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+.mb-1 {
+    margin-bottom: 10px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.main-header {
+    background-color: #5cabc536 !important;
+    box-shadow: none !important;
+    align-items: center;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+}
+
+.main-header p {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+button,
+select {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 670px;
+    display: flex;
+    justify-content: center;
+}
+
+.widget {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    padding: 40px 10px;
+    background-color: #fff;
+}
+
+.lp-smart-field-1 {
+    background-color: #f1f1f3;
+    padding: 20px;
+    width: 400px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #29303b;
+}
+
+.btn {
+    white-space: nowrap;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    background-color: #5cabc5;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    cursor: pointer;
+}
+
+.lp-smart-field-1 input[type="text"] {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+}
+
+/* lp-smart-field-2 css starts from here  */
+
+.lp-smart-field-2 {
+    width: calc(100% - 20px);
+    box-shadow: 0 0 18px 4px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+    font-family: Inter UI, Open Sans, Segoe UI, sans-serif;
+    color: #29303b;
+    background-color: #f8f8f9;
+}
+
+.lp-smart-field-2 .form-content {
+    padding: 20px;
+}
+
+.lp-smart-field-2 .head-content {
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.lp-smart-field-2-footer {
+    width: calc(50% - 10px);
+}
+
+.brand-img {
+    margin-right: 13px;
+}
+
+.brand-img.visa {
+    height: 13.42px;
+    float: left;
+    margin-top: 1px;
+}
+
+.brand-img.first {
+    margin-left: 26px;
+}
+
+.brand-img.mastercard {
+    height: 20px;
+    float: left;
+    margin-top: -4px;
+}
+
+.brand-img.amex {
+    height: 20px;
+    float: left;
+    margin-top: -4px;
+}
+
+.brand-img.discover {
+    height: 8px;
+    float: left;
+    margin-top: 2px;
+}
+
+.checkbox-wrapper {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+    position: relative;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.checkbox-wrapper .checkbox-input {
+    position: absolute;
+    top: 4px;
+    right: 158px;
+}
+
+.lp-smart-field-2 .btn {
+    height: 50px;
+    border-radius: 0;
+}
+
+/* .lp-smart-field-3 starts from here  */
+
+.bg-pink {
+    background-color: #b8f0d1;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.lp-smart-field-3 {
+    margin: 40px 0px;
+}
+
+.lp-form-group {
+    border-bottom: 1px solid black;
+}
+
+.lp-smart-field-3 input[type="text"] {
+    padding: 20px;
+    border: none;
+    outline: none;
+}
+
+.lp-smart-field-3 {
+    width: calc(100% - 40px);
+    max-width: 640px;
+}
+.lp-smart-field-3 .floating__input {
+    padding-left: 0;
+    background-color: #e2f9ec;
+    border: 0;
+    border-bottom: 1px solid #5acb8d;
+}
+
+.lp-smart-field-3 .floating__input:last-child {
+    border-bottom: 0;
+}
+
+.lp-smart-field-3 .floating__label::before {
+    left: 0rem;
+}
+
+.lp-smart-field-3 .floating {
+    margin: 0;
+}
+
+.lp-smart-field-3 .form-group {
+    margin: 20px 0px;
+    background-color: #e2f9ec;
+    padding: 0 20px;
+}
+/* till here  */
+
+/* lp-smart-form-4 */
+.lp-smart-field-4 {
+    width: calc(100% - 40px);
+    max-width: 640px;
+    padding: 10px;
+    background-color: rgba(50, 50, 93, 0.1);
+    border-radius: 4px;
+}
+
+.lp-smart-field-4 input[type="text"] {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 20px;
+    border: 0;
+    background-color: #fff;
+}
+
+.lp-smart-field-4 input[type="text"]::placeholder {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+}
+
+.lp-smart-field-4-input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lp-smart-field-4-input-group .subtitle {
+    width: 100%;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.lp-smart-field-4-input-group .input-card {
+    width: 50%;
+}
+
+.lp-smart-field-4-input-group .input-exp {
+    width: 25%;
+}
+
+.lp-smart-field-4-input-group .input-cvv {
+    width: 25%;
+}
+/* till here  */
+
+@media screen and (max-width: 670px) {
+    .container {
+        width: 100%;
+    }
+
+    .lp-smart-field-4-input-group {
+        flex-wrap: wrap;
+    }
+
+    .lp-smart-field-4-input-group .input-card {
+        width: 100%;
+    }
+
+    .lp-smart-field-4-input-group .input-exp {
+        width: 50%;
+    }
+
+    .lp-smart-field-4-input-group .input-cvv {
+        width: 50%;
+    }
+
+    .lp-smart-field-2-footer-wrapper,
+    .lp-smart-field-2-header-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .lp-smart-field-2-footer {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .lp-smart-field-2-header {
+        margin-bottom: 10px;
+    }
+}
