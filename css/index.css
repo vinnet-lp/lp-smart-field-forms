@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Quicksand:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f6f9fc;
+    font-family: "Nunito", sans-serif;
+}
+
+button,
+select {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+}
+
+/* Head for the logo, title and subtitle  */
+.lp-header {
+    font-family: var(--font__nunito);
+    letter-spacing: 1.2px;
+    box-shadow: none !important;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.lp-header .lp-logo {
+    background-color: #0d394736;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.lp-header .lp-logo img {
+    max-width: calc(100% - 20px);
+}
+
+.lp-header-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+.lp-header-subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* button design  */
+.lp-btn {
+    white-space: nowrap;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    background-color: #5cabc5;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    cursor: pointer;
+}
+
+/* Making container and wrapper */
+.lp-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lp-container {
+    width: 750px;
+    display: flex;
+    justify-content: center;
+}
+
+.lp-widget {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    padding: 60px;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 670px) {
+    .lp-container {
+        width: 100%;
+    }
+
+    .lp-widget {
+        padding: 40px 10px;
+    }
+}

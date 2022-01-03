@@ -1,0 +1,86 @@
+.lp-smart-field-2 {
+    background-color: #f1f1f3;
+    font-family: "Nunito Sans", sans-serif;
+    color: #29303b;
+    width: 100%;
+}
+
+.lp-smart-field-2 .form-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.lp-smart-field-2 .group-label {
+    position: relative;
+    margin-left: 24px;
+}
+
+.lp-smart-field-2 .group-label .label-input {
+    position: absolute;
+    right: 153px;
+}
+
+.lp-smart-field-2 .group-logos .brand-img {
+    height: 16px;
+    margin-left: 10px;
+    margin-top: 1px;
+}
+
+.lp-smart-field-2 .form-content {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.lp-smart-field-2 .form-content form {
+    width: 100%;
+}
+
+.lp-smart-field-2 .lp-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.lp-smart-field-2 .lp-form-inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.lp-smart-field-2 .lp-form-inner-wrapper .lp-form-inner-group {
+    width: calc(50% - 10px);
+}
+
+.lp-smart-field-2 .form-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.lp-smart-field-2 .form-footer .form-button {
+    white-space: nowrap;
+    display: inline-block;
+    height: 50px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    background-color: #5cabc5;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    cursor: pointer;
+    width: calc(50% - 10px);
+}
+
+.lp-smart-field-2 .form-footer .form-terms-conditions {
+    width: calc(50% - 10px);
+}

@@ -1,0 +1,72 @@
+.lp-smart-field-3 {
+    font-family: "Nunito Sans", sans-serif;
+    color: #29303b;
+    width: 100%;
+    background-color: rgba(92, 171, 197, 0.2);
+    padding: 20px 0px;
+}
+
+.lp-smart-field-3 .lp-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.lp-smart-field-3 .border-bottom {
+    border-bottom: 1px solid rgba(92, 171, 197, 0.6) !important;
+}
+
+.lp-smart-field-3 .lp-form-group .floating {
+    margin-bottom: 0px;
+    border-radius: 0;
+    padding: 0 10px;
+}
+
+.lp-smart-field-3 input {
+    border: 0;
+    border-bottom: rgba(92, 171, 197, 0.6);
+    background-color: rgba(92, 171, 197, 0);
+}
+
+.lp-smart-field-3 .lp-form-inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lp-smart-field-3 .lp-form-inner-wrapper .lp-form-inner-group {
+    width: 50%;
+}
+
+.lp-smart-field-3 .lp-form-inner-wrapper .lp-form-inner-group:first-child {
+    padding-right: 0px !important;
+}
+
+.lp-smart-field-3 .lp-form-inner-wrapper .lp-form-inner-group:nth-child(2n) {
+    padding-left: 0px !important;
+}
+
+.lp-smart-field-3 .form-button {
+    white-space: nowrap;
+    display: inline-block;
+    height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    background-color: #5cabc5;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button-wrapper {
+    padding: 0 20px;
+    margin-top: 20px;
+}

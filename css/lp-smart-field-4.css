@@ -1,0 +1,87 @@
+.lp-smart-field-4 {
+    background-color: #f1f1f3;
+    padding: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #29303b;
+    width: 100%;
+}
+
+.lp-form-group {
+    margin-bottom: 20px;
+}
+.lp-smart-field-4 input[type="text"] {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 20px;
+    border: 0;
+    background-color: #fff;
+}
+
+.lp-smart-field-4 input[type="text"]:focus {
+    outline: none;
+}
+
+.lp-smart-field-4 input[type="text"]::placeholder {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+}
+
+.lp-smart-field-4 .lp-form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lp-smart-field-4 .subtitle {
+    width: 100%;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.lp-smart-field-4 .input-card {
+    width: 50%;
+}
+
+.lp-smart-field-4 .input-exp {
+    width: 25%;
+}
+
+.lp-smart-field-4 .input-cvv {
+    width: 25%;
+}
+
+.lp-smart-field-4 .form-button {
+    white-space: nowrap;
+    display: inline-block;
+    height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    background-color: #5cabc5;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media screen and (max-width: 670px) {
+    .lp-smart-field-4 .input-card {
+        width: 100%;
+    }
+
+    .lp-smart-field-4 .input-exp {
+        width: 50%;
+    }
+
+    .lp-smart-field-4 .input-cvv {
+        width: 50%;
+    }
+}

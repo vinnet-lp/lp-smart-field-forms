@@ -2,5 +2,6 @@
     "trailingComma": "es5",
     "tabWidth": 4,
     "semi": false,
-    "doubleQuote": true
+    "doubleQuote": true,
+    "printWidth": 180
 }

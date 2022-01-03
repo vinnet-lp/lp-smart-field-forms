@@ -1,21 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,600);
-
-:root {
-    --color__accent: #5cabc5;
-
-    --field__background: #f5f5f5;
-    --field__background--hover: #fff;
-    --input__border: rgba(0, 0, 0, 0.2);
-    --input__border--hover: rgba(122, 46, 46, 0.2);
-    --label__color: #222;
-
-    --font__size: 16px;
-    --font__family: Roboto, Arial, sans-serif;
-}
-
 .floating {
     margin-bottom: 2rem;
-    background-color: var(--field__background);
+    background-color: #f5f5f5;
     transition: background-color 0.2s ease;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -23,20 +8,15 @@
 
 .floating:hover,
 .floating:focus-within {
-    background-color: var(--field__background--hover);
+    background-color: #fff;
 }
 
 .floating__input {
     padding: 1.8rem 1rem 0.6rem;
     font-size: 1rem;
-    border: 1px solid var(--input__border);
     transition: border-color 0.2s ease;
-    caret-color: var(--color__accent);
     width: 100%;
-}
-
-.floating:hover .floating__input {
-    border-color: var(--input__border--hover);
+    outline: none;
 }
 
 .floating__input::-moz-placeholder {
@@ -60,7 +40,7 @@
 }
 
 .floating__label::before {
-    color: var(--label__color);
+    color: #222;
     content: attr(data-content);
     display: inline-block;
     filter: blur(0);
@@ -72,17 +52,8 @@
     position: relative;
 }
 
-.floating__input:focus + .floating__label::after {
-    transform: scale3d(1, 1, 1);
-    opacity: 1;
-}
-
 .floating__input:focus::placeholder {
     color: rgba(0, 0, 0, 0.2);
-}
-
-input:focus {
-    outline: none;
 }
 
 .floating__input:-moz-placeholder-shown + .floating__label::before {
@@ -103,48 +74,5 @@ input:focus {
 }
 
 .floating__input:focus + .floating__label::before {
-    color: var(--color__accent);
-}
-
-.lp-smart-form-2 input {
-    background: none;
-    border-width: 0;
-    display: block;
-    width: 100%;
-    padding: 15px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: none;
-    border-style: none;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-fieldset {
-    padding: 3rem 2rem 1.5rem;
-}
-
-legend {
-    padding: 0 0.5rem;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-.hidden--visually {
-    border: 0;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+    color: #5cabc5;
 }
