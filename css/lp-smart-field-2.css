@@ -17,6 +17,15 @@
     margin-left: 24px;
 }
 
+.lp-smart-field-2 .floating__input {
+    border: 1px solid rgba(50, 50, 93, 0.11);
+}
+
+.lp-smart-field-2 .floating__input:focus,
+.lp-smart-field-2 .floating__input:hover {
+    border: 1px solid rgba(92, 171, 197, 0.4);
+}
+
 .lp-smart-field-2 .group-label .label-input {
     position: absolute;
     right: 153px;
@@ -78,9 +87,24 @@
     text-decoration: none;
     transition: all 0.15s ease;
     cursor: pointer;
-    width: calc(50% - 10px);
+    min-width: calc(50% - 10px);
 }
 
 .lp-smart-field-2 .form-footer .form-terms-conditions {
-    width: calc(50% - 10px);
+    max-width: calc(50% - 10px);
+}
+
+@media screen and (max-width: 670px) {
+    .group-logos {
+        margin-top: 15px;
+    }
+
+    .lp-smart-field-2 .form-footer .form-button {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .lp-smart-field-2 .form-footer .form-terms-conditions {
+        max-width: 100%;
+    }
 }

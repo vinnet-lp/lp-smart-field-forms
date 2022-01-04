@@ -38,7 +38,7 @@
             <!-- lp smart fields form 1 -->
             <div class="lp-container lp-widget">
                 <div class="lp-smart-field-1">
-                    <form for="lp-smart-field-1" action="#">
+                    <form for="lp-smart-field-1" id="lp-smart-form-1" action="#">
                         <div class="lp-form-group">
                             <label for="lp-field-1-name">Name</label>
                             <input id="lp-field-1-name" type="text" placeholder="Tom Porter" />
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                     <div class="form-content">
-                        <form for="lp-smart-field-2" action="#">
+                        <form for="lp-smart-field-2" id="lp-smart-form-2" action="#">
                             <div class="lp-form-group">
                                 <div class="floating">
                                     <input id="lp-field-2-name" class="floating__input" name="name" placeholder="Tom Porter" />
@@ -126,7 +126,7 @@
             <!-- lp smart fields from 3 -->
             <div class="lp-container lp-widget">
                 <div class="lp-smart-field-3">
-                    <form for="lp-smart-field-3" action="#">
+                    <form for="lp-smart-field-3" id="lp-smart-form-3" action="#">
                         <div class="lp-form-group">
                             <div class="floating">
                                 <input id="lp-field-3-name" class="floating__input border-bottom" name="name" placeholder="Johan Peter" />
@@ -200,17 +200,17 @@
             <!-- lp smart fields form 4  -->
             <div class="lp-container lp-widget">
                 <div class="lp-smart-field-4">
-                    <form action="">
+                    <form for="lp-smart-field-4" action="" id="lp-smart-form-4">
                         <div class="lp-form-group">
                             <p class="subtitle">Enter your card details</p>
                             <div class="input-card">
-                                <input id="lp-field-4-card" class="input" type="text" placeholder="Card Number" required autocomplete="name" />
+                                <input id="lp-field-4-card" class="input" type="text" placeholder="Card Number" autocomplete="name" />
                             </div>
                             <div class="input-exp">
-                                <input id="lp-field-4-expiry-date" class="input" type="text" placeholder="MM/YY" required autocomplete="name" />
+                                <input id="lp-field-4-expiry-date" class="input" type="text" placeholder="MM/YY" autocomplete="name" />
                             </div>
                             <div class="input-cvv">
-                                <input id="lp-field-4-cvv" class="input" type="text" placeholder="CVV" required autocomplete="name" />
+                                <input id="lp-field-4-cvv" class="input" type="text" placeholder="CVV" autocomplete="name" />
                             </div>
                         </div>
                         <div class="button">
@@ -220,5 +220,12 @@
                 </div>
             </div>
         </div>
+
+        <!-- JavaScript for the forms  -->
+        <script src="js/index.js"></script>
+        <script src="js/lp-smart-field-1.js"></script>
+        <script src="js/lp-smart-field-2.js"></script>
+        <script src="js/lp-smart-field-3.js"></script>
+        <script src="js/lp-smart-field-4.js"></script>
     </body>
 </html>
