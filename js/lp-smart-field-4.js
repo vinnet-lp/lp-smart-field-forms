@@ -64,6 +64,8 @@
             input.classList.add("lp-has-error")
             input.parentNode.appendChild(createErrorLabel(EMPTY_FIELD_ERRORS[getFieldName(input)]))
             return true
+        } else if (!input.value) {
+            return false
         }
 
         // check if the form input has a valid string

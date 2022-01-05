@@ -60,18 +60,21 @@
     }
 
     const validateInput = (input) => {
-        // give an error if the form input is input and return true
+        // give an error if the form input is empty and return true
         if (!input.value && !input.classList.contains("lp-has-error")) {
             input.classList.add("lp-has-error")
             input.parentNode.appendChild(createErrorLabel(EMPTY_FIELD_ERRORS[getFieldName(input)]))
             return true
+        } else if (!input.value) {
+            return false
         }
 
-        // check if the form input has a valid string
         input.classList.remove("lp-has-error")
         let errorElement = input.parentNode.children[2]
         if (errorElement) errorElement.remove()
         return false
+
+        // check if the form input has a valid string
     }
 
     form.addEventListener("submit", (e) => {

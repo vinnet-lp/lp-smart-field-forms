@@ -54,6 +54,8 @@
         if (idValue && idValue.split(LP_FORM_APPEND).length > 1) {
             let fieldName = idValue.split(LP_FORM_APPEND)[1].split("-").join("")
             return fieldName === "expirydate" ? "expiryDate" : fieldName
+        } else if (!input.value) {
+            return false
         }
 
         return false
