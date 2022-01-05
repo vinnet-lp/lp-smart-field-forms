@@ -108,3 +108,13 @@
         max-width: 100%;
     }
 }
+
+/* CSS to toggle errors for the input  */
+.lp-smart-field-2 .lp-has-error {
+    border: 1px solid rgba(255, 0, 0, 0.4) !important;
+}
+
+.lp-smart-field-2 .lp-error-message {
+    color: rgba(255, 0, 0, 0.6) !important;
+    font-size: 12px;
+}
