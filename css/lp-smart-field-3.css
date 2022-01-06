@@ -26,7 +26,6 @@
 .lp-smart-field-3 input {
     border: 0;
     border-bottom: rgba(92, 171, 197, 0.6);
-    background-color: rgba(92, 171, 197, 0);
 }
 
 .lp-smart-field-3 .lp-form-inner-wrapper {
@@ -77,6 +76,9 @@
 }
 
 .lp-smart-field-3 .lp-error-message {
+    display: block;
+    margin-bottom: 12px;
+    margin-top: 4px;
     color: rgba(255, 0, 0, 0.6) !important;
     font-size: 12px;
 }

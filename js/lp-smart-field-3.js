@@ -2,6 +2,13 @@
     const LP_FORM_APPEND = "lp-field-3-"
     const form = document.querySelector("#lp-smart-form-3")
     const inputName = document.querySelector(`#${LP_FORM_APPEND}name`)
+    const inputEmail = document.querySelector(`#${LP_FORM_APPEND}email`)
+    const inputPhone = document.querySelector(`#${LP_FORM_APPEND}phone`)
+    const inputAddress = document.querySelector(`#${LP_FORM_APPEND}address`)
+    const inputCity = document.querySelector(`#${LP_FORM_APPEND}city`)
+    const inputState = document.querySelector(`#${LP_FORM_APPEND}state`)
+    const inputCountry = document.querySelector(`#${LP_FORM_APPEND}country`)
+    const inputZip = document.querySelector(`#${LP_FORM_APPEND}zip`)
     const inputCard = document.querySelector(`#${LP_FORM_APPEND}card`)
     const inputExpiry = document.querySelector(`#${LP_FORM_APPEND}expiry-date`)
     const inputCvv = document.querySelector(`#${LP_FORM_APPEND}cvv`)
@@ -44,6 +51,13 @@
 
     const EMPTY_FIELD_ERRORS = {
         name: "Enter your name exactly as it appears on your card.",
+        email: "Enter your email address.",
+        phone: "Enter your phone number.",
+        address: "Enter your address.",
+        city: "Enter your city.",
+        state: "Enter your state.",
+        country: "Enter your country.",
+        zip: "Enter your zip.",
         card: "Enter your credit card number.",
         expiryDate: "Enter your credit card expiration.",
         cvv: "Enter your credit card CVV.",
@@ -54,8 +68,6 @@
         if (idValue && idValue.split(LP_FORM_APPEND).length > 1) {
             let fieldName = idValue.split(LP_FORM_APPEND)[1].split("-").join("")
             return fieldName === "expirydate" ? "expiryDate" : fieldName
-        } else if (!input.value) {
-            return false
         }
 
         return false
@@ -67,9 +79,10 @@
             input.classList.add("lp-has-error")
             input.parentNode.appendChild(createErrorLabel(EMPTY_FIELD_ERRORS[getFieldName(input)]))
             return true
+        } else if (!input.value) {
+            return true
         }
 
-        // check if the form input has a valid string
         input.classList.remove("lp-has-error")
         let errorElement = input.parentNode.children[2]
         if (errorElement) errorElement.remove()
@@ -82,5 +95,12 @@
         validateInput(inputCard)
         validateInput(inputExpiry)
         validateInput(inputCvv)
+        validateInput(inputEmail)
+        validateInput(inputPhone)
+        validateInput(inputAddress)
+        validateInput(inputCity)
+        validateInput(inputState)
+        validateInput(inputCountry)
+        validateInput(inputZip)
     })
 })()

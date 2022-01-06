@@ -66,7 +66,7 @@
             input.parentNode.appendChild(createErrorLabel(EMPTY_FIELD_ERRORS[getFieldName(input)]))
             return true
         } else if (!input.value) {
-            return false
+            return true
         }
 
         // check if the form input has a valid string
